@@ -1,0 +1,19 @@
+
+# Obsidian system/config files
+.obsidian
+.obsidian/plugins/
+.obsidian/cache/
+.obsidian/workspace.json
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+*.ini
+desktop.ini
+**/desktop.ini
+
+# Optional: sandbox/autosave junk (macOS)
+*.sb-*
+
