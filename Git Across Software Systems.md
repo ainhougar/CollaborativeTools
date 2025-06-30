@@ -14,3 +14,9 @@ In order to **push/pull across system software**, we will have to indicate GitHu
 
 
 **When to set up .gitignore** 
+
+.gitignore should be set up **before the first push is performed, ideally**. This way, the files that we do not wish to upload into GitHub, will never be uploaded there. This will prevent running into problems down the line. Some of these problems include: 
+- **File conflicts** if working from different software systems that create different configuration files
+- When pushing from a version that includes less files than the version on the Hub (ignores files with .gitignore), **the push will be blocked**. It will recommend that you pull the version from the Hub. GitHub understands the Hub repository version to be more complete and therefore the latest.  However, in this scenario (removing files that should have been ignored), we want to keep the changes in our local disk. There are two ways to go about this: 
+	- Remove the files that are now ignored from GitHub (manually or in gitBash: `git rm -r --cached [file_name]`) & then push changes (**this step will no longer be blocked.**)
+	- Force a push into GitHub `git push --force

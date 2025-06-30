@@ -1,0 +1,4 @@
+
+
+Obsidian creates Rmarkdown documents (with the extension .md). These documents are formatted with background code language. They are well updated to include code chunks & plain text. This is why I have chosen this platform to note, share & explain the set-up of technical tools that demand some coding knowledge. It is also a good tool to share code of any type (Terminal, R, Latex, Python) because is thought of as a general transcription tool with advanced formatting features. Unlike RMarkdown within RStudio, which is very useful to present R-related outputs & demand neat set-up of the R code lines, Rmarkdown allows sharing of code lines without the requirement to follow a coherent code workflow. All in all, Obsidian helps share independent bits of information & is well-suited to integrate code. 
+
