@@ -1,14 +1,15 @@
 
-
 ## Using .gitignore 
 
 **Working across systems** 
 
-Software systems create **configuration files** (cache etc) that support processing of the files that we created. These configuration files are **specific to operating systems**; they also follow different file extension nomenclature. 
+Software systems create **configuration files** (cache etc) that support processing of the manually created files. Softwares may not always use configuration files that run in the background. Scenarios when they are required include third-party applications accessing/operating on files such as, Google Drive Synching. 
+
+When these configuration files are created, we note that they are **specific to operating systems (Windows VS MacOs**; they also follow different file extension nomenclature. 
 - Windows creates files with **".ini" extensions** & 
 - MacOs creates files with the **".DS_Store"** extension. 
 
-In order to **push/pull across system software**, we will have to indicate GitHub to ignore files with these extensions. For that, we create a ".gitignore" note file, where we specify that these files need to be ignored in the throughout the file cloning operation. We can write something like this:
+In order to **push/pull a repository that undergoes third-party operations on different system softwares** (i.e: Two individuals have enabled Google Synching of repository on different System softwares **-not the best example however-**), we will have to indicate GitHub specific configuration files that would ran into conflicts when pushing/pulling. We will identify these files by their extensions (among probably other features). Then, we will create a ".gitignore" note file, where we will specify that these files need to be ignored in the Git committing process. We can write something like this:
 
 ![[Screenshot 2025-06-26 161225 1.png]]
 
